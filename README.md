@@ -10,6 +10,15 @@ npm init -y
 npm install next react react-dom
 ```
 
+# Editar o package.json para rodar o next
+```
+"scripts": {
+    "dev": "next",
+    "run": "next start",
+    "build": "next build"
+  },
+```
+
 # Criar o index.js
 
 ```
@@ -26,4 +35,11 @@ export default Index
 
 ```
 npm run dev
+```
+
+
+```
+git rm -r --cached .next
+git commit -m 'Remove .next from git project'
+git push origin master
 ```
